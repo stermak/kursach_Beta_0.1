@@ -16,22 +16,19 @@ public class MainActivity extends AppCompatActivity {
     Button btn;
     Button btn2;
     Button btn3;
-    Button btn4;
-    Button btn5;
     TextView name;
-    CalendarView calend;
+    CalendarView calendar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         btn = findViewById(R.id.btn);
         btn2 = findViewById(R.id.btn2);
         btn3 = findViewById(R.id.btn3);
-        btn4 = findViewById(R.id.btn4);
-        btn5 = findViewById(R.id.btn5);
         name = findViewById(R.id.name);
-        calend = findViewById(R.id.calend);
+        calendar = findViewById(R.id.calend);
 
         btn.setOnClickListener(this::onClick);
         btn2.setOnClickListener(this::onClick);
@@ -51,15 +48,10 @@ public class MainActivity extends AppCompatActivity {
             case (R.id.btn3):
                 fragment = new SpisokFragment();
                 break;
-            case (R.id.btn4):
-                fragment = new SpisokFragment();
-                break;
-            case (R.id.btn5):
-                fragment = new SpisokFragment();
-                break;
         }
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
+        assert fragment != null;
         ft.replace(R.id.HomeFragment, fragment);
         ft.commit();
     }
