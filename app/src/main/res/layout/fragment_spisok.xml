@@ -8,6 +8,7 @@
 
     <Button
         android:id="@+id/btn4"
+        style="@style/Widget.AppCompat.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onClick"
@@ -20,7 +21,7 @@
         app:layout_constraintVertical_bias="0.77" />
 
     <ListView
-        android:id="@+id/listview"
+        android:id="@+id/listView"
         android:layout_width="411dp"
         android:layout_height="611dp"
         android:layout_marginTop="60dp"
