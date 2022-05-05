@@ -2,12 +2,11 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/gradient_drawable">
 
     <Button
-        android:id="@+id/themes"
+        android:id="@+id/btn5"
         android:layout_width="205dp"
         android:layout_height="80dp"
         android:text="Темы приложения"
@@ -19,7 +18,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/profile"
+        android:id="@+id/btn6"
         android:layout_width="205dp"
         android:layout_height="80dp"
         android:layout_marginVertical="61dp"

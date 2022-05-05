@@ -16,6 +16,9 @@ public class MainActivity extends AppCompatActivity {
     Button btn;
     Button btn2;
     Button btn3;
+    Button btn4;
+    Button btn5;
+    Button btn6;
     TextView name;
     CalendarView calendar;
 
@@ -27,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
         btn = findViewById(R.id.btn);
         btn2 = findViewById(R.id.btn2);
         btn3 = findViewById(R.id.btn3);
+        btn4 = findViewById(R.id.btn4);
+        btn5 = findViewById(R.id.btn5);
+        btn6 = findViewById(R.id.btn6);
         name = findViewById(R.id.name);
         calendar = findViewById(R.id.calend);
 
@@ -47,6 +53,15 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case (R.id.btn3):
                 fragment = new SpisokFragment();
+                break;
+            case (R.id.btn4):
+                fragment = new CreateFragment();
+                break;
+            case (R.id.btn5):
+                fragment = new ThemesFragment();
+                break;
+            case (R.id.btn6):
+                fragment = new ProfileFragment();
                 break;
         }
         FragmentManager fm = getSupportFragmentManager();
