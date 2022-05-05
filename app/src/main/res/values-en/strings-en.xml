@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kursach2</string>
+    <string name="hello_blank_fragment">I am new fragment</string>
+    <string name="Profile">Profile</string>
+    <string name="Themes">Themes</string>
+    <string name="Create">Create</string>
+    <string name="Main">Main</string>
+    <string name="List">List</string>
+    <string name="Settings">Settings</string>
+    <string name="Text_name">warranty periods</string>
+</resources>

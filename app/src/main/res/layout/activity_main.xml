@@ -8,8 +8,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradient_drawable"
     tools:context=".MainActivity">
-
-    <fragment
+    <androidx.fragment.app.FragmentContainerView
         android:id="@+id/HomeFragment"
         android:name="com.example.kursach2.HomeFragment"
         android:layout_width="match_parent"
@@ -19,7 +18,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-    </fragment>
+    </androidx.fragment.app.FragmentContainerView>
 
     <TextView
         android:id="@+id/name"
@@ -27,7 +26,7 @@
         android:layout_height="60dp"
         android:fontFamily="@font/monoton"
         android:gravity="top"
-        android:text="  warranty    periods"
+        android:text="@string/Text_name"
         android:textColor="#82B1FF"
         android:textSize="33sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,7 +38,7 @@
         android:layout_width="137dp"
         android:layout_height="60dp"
         android:onClick="onClick"
-        android:text="Главная"
+        android:text="@string/Main"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn3"
         app:layout_constraintStart_toStartOf="parent" />
@@ -49,7 +48,7 @@
         android:layout_width="137dp"
         android:layout_height="60dp"
         android:onClick="onClick"
-        android:text="Список"
+        android:text="@string/List"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn2" />
 
@@ -58,7 +57,7 @@
         android:layout_width="137dp"
         android:layout_height="60dp"
         android:onClick="onClick"
-        android:text="Настройки"
+        android:text="@string/Settings"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
