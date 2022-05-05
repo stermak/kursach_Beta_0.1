@@ -3,8 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/linearLayout"
-    android:layout_width="411dp"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_drawable"
     tools:context=".MainActivity">
@@ -22,10 +21,10 @@
 
     <TextView
         android:id="@+id/name"
-        android:layout_width="411dp"
-        android:layout_height="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:fontFamily="@font/monoton"
-        android:gravity="top"
+        android:gravity="center_horizontal"
         android:text="@string/Text_name"
         android:textColor="#82B1FF"
         android:textSize="33sp"
