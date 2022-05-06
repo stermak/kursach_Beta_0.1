@@ -12,4 +12,11 @@
     <string name="EnterOnCreate">Enter name</string>
     <string name="NameCompany">Name Company</string>
     <string name="SendToSpisok">Send</string>
+    <string name="Login">Login</string>
+    <string name="SwipeRight">Swipe Right</string>
+    <string name="Password">Password</string>
+    <string name="Email">Email</string>
+    <string name="RetypePassword">RetypePassword</string>
+    <string name="Registration">Registration</string>
+    <string name="SwipeLeft">SwipeLeft</string>
 </resources>

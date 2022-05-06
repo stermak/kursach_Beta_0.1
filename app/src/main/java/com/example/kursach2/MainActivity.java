@@ -28,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
         //кнопки
         btn = findViewById(R.id.btn);
         btn2 = findViewById(R.id.btn2);
@@ -62,6 +64,12 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case (R.id.btn6):
                 fragment = new ProfileFragment();
+                break;
+            case (R.id.btn7):
+                fragment = new RegisterFragment();
+                break;
+            case (R.id.btn8):
+                fragment = new LoginFragment();
                 break;
         }
         FragmentManager fm = getSupportFragmentManager();
