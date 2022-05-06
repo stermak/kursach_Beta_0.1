@@ -2,10 +2,8 @@ package com.example.kursach2;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CalendarView;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     Button btn4;
     Button btn5;
     Button btn6;
+    Button btn7;
     TextView name;
     CalendarView calendar;
 
@@ -36,25 +35,10 @@ public class MainActivity extends AppCompatActivity {
         btn4 = findViewById(R.id.btn4);
         btn5 = findViewById(R.id.btn5);
         btn6 = findViewById(R.id.btn6);
+        btn7 = findViewById(R.id.btn7);
         name = findViewById(R.id.name);
         calendar = findViewById(R.id.calend);
 
-        //Динамическое заполнение списка
-        ListView listView = findViewById(R.id.listView);
-        final String[] List = new String[] {            };
-
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
-                android.R.layout.simple_list_item_1, List);
-
-        listView.setAdapter(adapter);
-
-        //хз зачем нужны эти кнопки
-        btn.setOnClickListener(this::onClick);
-        btn2.setOnClickListener(this::onClick);
-        btn3.setOnClickListener(this::onClick);
-        btn4.setOnClickListener(this::onClick);
-        btn5.setOnClickListener(this::onClick);
-        btn6.setOnClickListener(this::onClick);
 
     }
     public void onClick (View view) {
